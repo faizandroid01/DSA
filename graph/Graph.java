@@ -47,6 +47,7 @@ public class Graph {
         return rebuildList;
     }
 
+    //BFS
     private static void traverseGraphInBFS(boolean[] visitedArr, Map<
             Integer, List<Integer>> graphList, Queue<Integer> queue) {
         //This method helps to traverse all the graph node irrespective of the fact that they might be disjoint/ connected components.
@@ -79,17 +80,58 @@ public class Graph {
 
     }
 
+
+    //DFS uses recursion and in-turn stack
+    private static void traverseGraphInDFS(boolean[] visitedArr, Map<
+            Integer, List<Integer>> graphList) {
+        //This method helps to traverse all the graph node irrespective of the fact that they might be disjoint/ connected components.
+
+        graphList.forEach((key, value) -> {
+            if (!visitedArr[key]) {
+                visitedArr[key] = true;
+                System.out.println(key);
+                traverseGraphInDFSRecursively(key, visitedArr, graphList);
+            }
+        });
+
+    }
+
+    private static void traverseGraphInDFSRecursively(Integer key, boolean[] visitedArr, Map<Integer, List<Integer>> graphList) {
+
+        for (Integer i : graphList.get(key)) {
+            if (!visitedArr[i]) {
+                visitedArr[i] = true;
+                System.out.println(i);
+                traverseGraphInDFSRecursively(i, visitedArr, graphList);
+            }
+        }
+
+    }
+
+
     public static void main(String args[]) {
         int n = 9, m = 9;
-        String inputRepresentation = "(1,2),(2,3),(2,4),(4,5),(5,8),(8,7),(7,6),(6,9),(6,1)";
 
-        int startingPoint = 1; // this affects the adjacency List
-        boolean[] visitedArr = new boolean[n + 1];
-        Map<Integer, List<Integer>> graphList = parseTheInputToAdjacencyList(inputRepresentation, m, startingPoint);
-        System.out.println(graphList);
-        System.out.println("=============================");
-        Queue<Integer> queue = new LinkedList<Integer>();
-        traverseGraphInBFS(visitedArr, graphList, queue);
+        List<String> inputs = Arrays.asList("(1,2),(2,3),(2,4),(4,5),(5,8),(8,7),(7,6),(6,9),(6,1)", "(1,2),(2,5),(2,6),(1,3),(3,4),(4,8),(8,7),(7,3)");
+
+        for (String input : inputs) {
+
+            int startingPoint = 1; // this affects the adjacency List
+            boolean[] visitedArr = new boolean[n + 1];
+            Map<Integer, List<Integer>> graphList = parseTheInputToAdjacencyList(input, m, startingPoint);
+            System.out.println(graphList);
+            System.out.println("=============BFS================");
+            Queue<Integer> queue = new LinkedList<Integer>();
+
+            traverseGraphInBFS(visitedArr, graphList, queue);
+
+            System.out.println("\n\n\n\n=============DFS================");
+            visitedArr = new boolean[n + 1];
+            traverseGraphInDFS(visitedArr, graphList);
+
+            System.out.println("--------------------------------------------------------------");
+        }
+
 
     }
 
