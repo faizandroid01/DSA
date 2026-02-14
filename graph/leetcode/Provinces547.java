@@ -29,6 +29,16 @@ isConnected[i][j] == isConnected[j][i]
 
 Solution submitted - https://leetcode.com/problems/number-of-provinces/submissions/1918929836/
 */
+
+/*
+* SUGGESTION B4 next solve -
+*
+* 1.you can flatten the entire matrix and run the main dfs call on the that , 3x3 = 9 so visited arr of 10 size will let you iterate over all
+* and checks for all nodes.
+* 2. Convert to adjacency list
+*
+* */
+
 public class Provinces547 {
 
     public static void main(String[] args) {
