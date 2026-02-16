@@ -1,0 +1,4 @@
+
+1. Deep copies the entire array in to a new one.
+char [][] visitedArr = Arrays.stream(grid).map(char[]::clone).toArray(char[][]::new);
+
