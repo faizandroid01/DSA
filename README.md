@@ -11,3 +11,5 @@ All DSA related questions ans queries
  * LC-547 : No Of Provinces - https://leetcode.com/problems/number-of-provinces/submissions/1918929836/
  * LC-200 : No Of Island  - https://leetcode.com/problems/number-of-islands/submissions/1920312198/
  * LC-733 : Flood Fill (pixel color replace) : https://leetcode.com/problems/flood-fill/submissions/1920675971/
+   * LC-994 :  Rotting Oranges : https://leetcode.com/problems/rotting-oranges/submissions/1921907840/
+                                 https://leetcode.com/problems/rotting-oranges/submissions/1921910120/
