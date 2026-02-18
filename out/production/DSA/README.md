@@ -9,4 +9,9 @@ All DSA related questions ans queries
 ## SOLVING 
 14-Feb-2026 -
  * LC-547 : No Of Provinces - https://leetcode.com/problems/number-of-provinces/submissions/1918929836/
- * LC-200 : No Of Island (Flood Fill) - https://leetcode.com/problems/number-of-islands/submissions/1920312198/
+ * LC-200 : No Of Island  - https://leetcode.com/problems/number-of-islands/submissions/1920312198/
+ * LC-733 : Flood Fill (pixel color replace) : https://leetcode.com/problems/flood-fill/submissions/1920675971/
+ * LC-994 : Rotting Oranges : https://leetcode.com/problems/rotting-oranges/submissions/1921907840/
+                               https://leetcode.com/problems/rotting-oranges/submissions/1921910120/
+ * LC-1559 : Detect Cyle in Matrix : https://leetcode.com/problems/detect-cycles-in-2d-grid/submissions/1922461898/ 
+ * LC-207 : Detect Cyle in Matrix Directed Graph: https://leetcode.com/problems/course-schedule/submissions/1923039475/ 
