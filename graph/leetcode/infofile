@@ -5,3 +5,4 @@
 2. Converting a 2d array into 1d array through flatenning and passing each row into stream and filtering out any requirement.
    Arrays.stream(grid).flatMapToInt(x -> Arrays.stream(x)).anyMatch(val -> val==1);
 
+3. Fill Arrays : Arrays.fill(in_degree, 0);
