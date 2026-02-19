@@ -26,5 +26,24 @@ replay_pid*
 .xml
 .iml
 
-/out/*
-.idea/*
+out/
+.idea/
+
+# Java class files
+*.class
+
+# Maven build output
+target/
+
+# Gradle build output
+/build/
+.gradle/
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ project files
+*.iml
