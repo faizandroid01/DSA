@@ -8,7 +8,7 @@ All DSA related questions ans queries
 18-Feb-2026
  * Graph DFS : DetectCycleWeightedGraphDFS
  * Graph DFS : DetectCycleUnWeightedGraphDFSandprint the order 
-19-Feb-2026
+25-Feb-2026
  * Topological Sort , DetectCycleWeightedGraphBFS.
 
 ## SOLVING 
@@ -19,4 +19,5 @@ All DSA related questions ans queries
  * LC-994 : Rotting Oranges : https://leetcode.com/problems/rotting-oranges/submissions/1921907840/
                                https://leetcode.com/problems/rotting-oranges/submissions/1921910120/
  * LC-1559 : Detect Cyle in Matrix : https://leetcode.com/problems/detect-cycles-in-2d-grid/submissions/1922461898/ 
- * LC-207 : Detect Cyle in Matrix Directed Graph: https://leetcode.com/problems/course-schedule/submissions/1923039475/ 
+ * LC-207 : Detect Cyle in Matrix Directed Graph: https://leetcode.com/problems/course-schedule/submissions/1923039475/
+ * LC-542 : Nearest Cell 0 : https://leetcode.com/problems/01-matrix/submissions/1930373101/?envType=problem-list-v2&envId=array
