@@ -6,3 +6,15 @@
    Arrays.stream(grid).flatMapToInt(x -> Arrays.stream(x)).anyMatch(val -> val==1);
 
 3. Fill Arrays : Arrays.fill(in_degree, 0);
+
+4. Sorting and reversing an array.
+  Type	Method
+  a. Primitive: int[]	=>   sort + reverse   , Can be directly reversed
+  b. Object[] : Integer[] => 	Arrays.sort(arr, reverseOrder) , Can be directly reversed through ,
+                                Arrays.sort And Collections.reverseOrder
+  c. Stream array :Stream	=> boxed + sorted
+                                Arrays.stream(int[]).boxed()
+                                .sorted(Collections.reverseOrder)
+                                .mapToInt(Integer::intValue)
+                                .toArray
+
